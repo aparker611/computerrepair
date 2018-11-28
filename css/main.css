@@ -325,7 +325,6 @@ ul#scene {
 
 /* SLIDER STYLE START */
 section.slider {
-  width: 1200px;
   margin: 0 auto;
   padding: 15px 8px;
 }
@@ -373,13 +372,23 @@ div.slider-item p.repair {
 /* SLIDER STYLE END */
 
 /* SLICK STYLES START */
-button.slick-next.slick-arrow,
+
 button.slick-prev.slick-arrow {
   background-color: rgba(0, 0, 0, 0.85);
   text-align: center;
   height: 30px;
   width: 30px;
   border-radius: 15px;
+  left: 0;
+}
+
+button.slick-next.slick-arrow {
+  background-color: rgba(0, 0, 0, 0.85);
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  right: 0;
 }
 
 button.slick-next.slick-arrow:hover,
@@ -403,13 +412,12 @@ button#slick-slide-control02:hover {
 
 /* INFORMATION STYLE START */
 section.information {
-  width: 1200px;
   margin: 0 auto;
   background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 237, 0, 0.5)), url("../images/info-bg.jpg") no-repeat;
   /*Change above image*/
   background-size: cover;
   text-align: center;
-  height: 70vh;
+  height: 100vh;
   padding: 30px 10px;
   display: flex;
   justify-content: center;
@@ -469,7 +477,7 @@ div.available-grid h2.sub-title::after {
 .grid-item:hover {
   color: black;
   background-color: white;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 div.info p {
