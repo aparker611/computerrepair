@@ -17,7 +17,15 @@ $(document).ready(function() {
     infinite: true,
     autoplay: true,
     arrows: true,
-    dots: true
+    dots: true,
+  }));
+
+  $('.work-grid').slick(({
+    infinite: true,
+    autoplay: true,
+    arrows: true,
+    dots: true,
+    slidesToShow: 2,
   }));
 
   $('.opening').click(function() {
