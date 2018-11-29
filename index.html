@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <section class="cover-main">
+    <section class="cover-main" id="top">
         <header>
             <nav class="nav-wrapper">
                 <div class="logo">
@@ -36,11 +36,11 @@
                     </a>
                 </div>
                 <ul class="menu">
-                    <li><a href="">Home</a></li>
+                    <li><a href="#top">Home</a></li>
                     <li><a href="">My Services</a></li>
                     <li><a href="">Pricing</a></li>
                     <li><a href="">About</a></li>
-                    <li><a href="">Footer</a></li>
+                    <li><a href="#footer">Footer</a></li>
                 </ul>
             </nav>
         </header>
@@ -58,7 +58,7 @@
                 <li class="layer title" data-depth="0.50">Computer Engineer</li>
                 <li class="layer btn btn-main" data-depth="0.90">
                     <a href="#" class="service-btn">View Services</a>
-                    <a href="#" class="quote-btn">Free Quote</a>
+                    <a href="#quote" class="quote-btn">Free Quote</a>
                 </li>
             </ul>
         </div>
@@ -103,7 +103,7 @@
           <div class="slider-item"><img src="images/comp-three.jpg" class="slider-img"></div>
         </div>
     </section>
-    <section class="quote-wrapper">
+    <section class="quote-wrapper" id="quote">
         <h2 class="sub-title quote">Free Quote</h2>
         <div class="container">
             <div class="row">
@@ -150,6 +150,13 @@
             </div>
         </div>
     </section>
+    <footer id="footer">
+        <div class="footer-wrapper">
+            <p class="copywrite">Copyright © 2018 Adam Parker</p>
+              <a href="#" class="social-item"><img src="images/facebook.svg" alt="" class="social-img"></a>
+              <a href="#" class="social-item"><img src="images/linkedin.svg" alt="" class="social-img"></a>
+        </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="scripts/parallax.min.js"></script>
     <script src="scripts/slick.min.js"></script>

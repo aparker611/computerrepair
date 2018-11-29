@@ -5,6 +5,7 @@ $(document).ready(function() {
 
   $('.opening-menu').hide();
 
+
   //Sticky
   $(window).on("scroll", function() {
     var scrollFromTop = $(window).scrollTop();

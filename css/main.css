@@ -213,6 +213,7 @@ header.sticky {
   right: 0;
   transform: translateY(-200%);
   transition: 0.2s;
+  z-index: 5;
 }
 
 body.scroll header.sticky {
@@ -324,6 +325,7 @@ ul#scene {
 section.slider {
   margin: 0 auto;
   padding: 15px 8px;
+  z-index: 500;
 }
 
 div.slider-grid {
@@ -514,6 +516,7 @@ section.opening:hover {
 }
 
 section.opening-menu {
+
   position: fixed;
   bottom: 0;
   left:   0;
@@ -523,10 +526,14 @@ section.opening-menu {
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
   width: 300px;
   height: 400px;
-  box-shadow:         2px 1px 5px 6px black
+  box-shadow:         2px 1px 5px 6px black;
   padding-bottom: 15px;
   border-radius: 25px;
   color: white;
+}
+
+p.opening-title {
+  z-index: 600;
 }
 
 section.opening-menu h2.sub-title::after {
@@ -663,3 +670,34 @@ canvas {
 }
 
 /* QUOTE STYLES END */
+
+/* FOOTER */
+footer {
+  position: relative;
+  height: 120px;
+  background: black;
+  color: white;
+  text-align: center;
+  z-index: -600;
+}
+
+footer div.footer-wrapper {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  backround-color: green;
+  margin: 0;
+  padding: 0;
+}
+
+img.social-img {
+  max-width: 32px;
+  margin-left: 10px;
+}
+
+img.social-img:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+/* FOOTER START */
