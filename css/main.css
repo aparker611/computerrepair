@@ -248,6 +248,8 @@ nav ul li a {
 
 nav ul li a:hover {
   border-bottom: 1px solid white;
+  text-decoration: none;
+  color: white;
 }
 
 header .logo img {
@@ -307,6 +309,7 @@ ul#scene {
   background-color: white;
   color: black;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .service-btn {
@@ -378,6 +381,7 @@ button.slick-prev.slick-arrow {
   width: 30px;
   border-radius: 15px;
   left: 0;
+  z-index: 50;
 }
 
 button.slick-next.slick-arrow {
@@ -678,7 +682,6 @@ footer {
   background: black;
   color: white;
   text-align: center;
-  z-index: -600;
 }
 
 footer div.footer-wrapper {
