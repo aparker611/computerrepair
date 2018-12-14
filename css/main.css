@@ -394,6 +394,7 @@ button#slick-slide-control00,
 button#slick-slide-control01,
 button#slick-slide-control02,
 button#slick-slide-control03,
+button#slick-slide-control04,
 button#slick-slide-control10,
 button#slick-slide-control11,
 button#slick-slide-control12,
@@ -410,6 +411,7 @@ button#slick-slide-control00:hover,
 button#slick-slide-control01:hover,
 button#slick-slide-control02:hover,
 button#slick-slide-control03:hover,
+button#slick-slide-control04:hover,
 button#slick-slide-control10:hover,
 button#slick-slide-control11:hover,
 button#slick-slide-control12:hover,
@@ -425,6 +427,7 @@ li.slick-active button#slick-slide-control00,
 li.slick-active button#slick-slide-control01,
 li.slick-active button#slick-slide-control02,
 li.slick-active button#slick-slide-control03,
+li.slick-active button#slick-slide-control04,
 li.slick-active button#slick-slide-control10,
 li.slick-active button#slick-slide-control11,
 li.slick-active button#slick-slide-control12,
@@ -433,7 +436,7 @@ li.slick-active button#slick-slide-control14,
 li.slick-active button#slick-slide-control15,
 li.slick-active button#slick-slide-control16,
 li.slick-active button#slick-slide-control17 {
-  background-color: silver;
+  background-color: rgb(0, 0, 0, 0.8);
   opacity: 0.9;
 }
 
@@ -784,7 +787,8 @@ div.image-frame iframe.service-image {
   max-width: 130px;
 }
 
-div.service-menu {
+div.service-menu,
+div.gallery-menu {
   width: 350px;
   margin: 0 auto;
   padding: 15px 15px;
@@ -795,28 +799,68 @@ div.service-menu {
 }
 
 .price-btn,
-.gallery-btn {
+.gallery-btn,
+.build-btn,
+.repair-btn {
   margin: 0 auto;
   display: inline-block;
   padding: 10px 20px;
   border: 1px solid white;
   background: transparent;
-  color: white;
+  color: white !important;
   background-color: black;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .price-btn:hover,
-.gallery-btn:hover {
+.gallery-btn:hover,
+.build-btn:hover,
+.repair-btn:hover {
   background: rgba(0, 0, 0, 0.8);
-  color: rgb(157, 157, 157);
+  color: rgb(157, 157, 157) !important;
   transition: 0.3s;
   text-decoration: none;
   transform: scale(1.2);
   transition: 0.3s;
+  cursor: pointer;
 }
 
 /* SERVICES END */
+/* GALLERY START */
+section.gallery {
+  margin-top: 120px;
+}
+
+section.gallery h2.gallery {
+  color: black;
+}
+
+div.build-grid img {
+  width: 360px;
+  height: 360px;
+  margin: 20px 25px;
+  transition: 0.3s;
+}
+
+div.repair-grid img {
+  width: 360px;
+  height: 360px;
+  margin: 20px 25px;
+  transition: 0.3s;
+}
+
+div.repair-grid img:hover,
+div.build-grid img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+div.grid-item {
+  margin: 0 auto;
+}
+
+/* GALLERY END */
 h2.test {
   font-size: 30px;
   line-height: 35px;
