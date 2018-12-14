@@ -1,11 +1,8 @@
 /*RESET CSS BEGIN*/
-
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -87,17 +84,15 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-
 /* HTML5 display-role reset for older browsers */
-
 article,
 aside,
 details,
@@ -109,88 +104,92 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 body {
-    line-height: 1;
-    font-family: 'Open Sans', sans-serif;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
 
 /*RESET CSS END*/
-
-
 /*HELPER CLASS BEGIN*/
-
 .alignLeft {
-    float: left;
+  float: left;
 }
 
 .alignRight {
-    float: right;
+  float: right;
 }
 
 .no-margin-bottom {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .margin-bottom-10 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .margin-bottom-20 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .margin-bottom-30 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 strong,
 b {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 em,
 i {
-    font-style: italic;
+  font-style: italic;
 }
 
 p,
 ul li,
 ol li {
-    font-size: 16px;
-    line-height: 23px;
-    margin: 0 0 20px 0;
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0 0 20px 0;
 }
 
 ul li,
 ol li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-/*HELPER CLASS END*/
 
+p.description {
+  font-size: 22px;
+  line-height: 27px;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+/*HELPER CLASS END*/
 * {
-    box-sizing: border-box;
-    outline: 0;
+  box-sizing: border-box;
+  outline: 0;
 }
 
 .wrapper {
@@ -200,7 +199,6 @@ ol li {
 }
 
 /* NAVIGATION BAR + HEADER STYLE START */
-
 header {
   background: transparent;
 }
@@ -255,7 +253,6 @@ nav ul li a:hover {
 header .logo img {
   max-width: 64px;
 }
-
 
 /* PARALLAX PAGE STYLES START */
 .cover-main {
@@ -320,10 +317,7 @@ ul#scene {
   margin-left: 30px;
 }
 
-
 /* PARALLAX STYLE END */
-
-
 /* SLIDER STYLE START */
 section.slider {
   margin: 0 auto;
@@ -341,7 +335,7 @@ div.slider-grid {
 }
 
 div.slider-item {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 22px;
   line-height: 27px;
 }
@@ -350,13 +344,11 @@ div.slider-item:hover {
   cursor: pointer;
 }
 
-
 div.slider-item a.name,
 div.slider-item p.repair {
   display: inline-block;
   font-size: 19px;
   line-height: 24px;
-  font-family: "Karla", sans-serif;
   padding: 0 15px;
   color: black;
   text-decoration: none;
@@ -372,7 +364,6 @@ div.slider-item p.repair {
 }
 
 /* SLIDER STYLE END */
-
 /* SLICK STYLES START */
 button.slick-prev.slick-arrow {
   background-color: rgba(0, 0, 0, 0.85);
@@ -435,8 +426,8 @@ li.slick-active button#slick-slide-control15 {
   background-color: silver;
   opacity: 0.9;
 }
-/* SLICK STYLES END */
 
+/* SLICK STYLES END */
 /* INFORMATION STYLE START */
 section.information {
   margin: 0 auto;
@@ -492,9 +483,9 @@ div.info {
 }
 
 /* INFORMATION STYLE END */
-
 /* OPENING HOURS STYLE START */
 section.opening {
+  z-index: 5;
   font-size: "Roboto Condensed", sans-serif;
   font-size: 17px;
   line-height: 22px;
@@ -507,30 +498,30 @@ section.opening {
   height: 30px;
   width: 125px;
   padding: 5px;
-  box-shadow:         2px 1px 5px 6px black;
+  box-shadow: 2px 1px 5px 6px black;
   transition: 0.3s;
   text-align: center;
 }
 
 section.opening:hover {
   cursor: pointer;
-  box-shadow:         2px 1px 5px 6px #fff;
+  box-shadow: 2px 1px 5px 6px #fff;
   transition: 0.3s;
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
 }
 
 section.opening-menu {
-
+  z-index: 1;
   position: fixed;
   bottom: 0;
-  left:   0;
+  left: 0;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 20px;
   line-height: 25px;
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
   width: 300px;
   height: 400px;
-  box-shadow:         2px 1px 5px 6px black;
+  box-shadow: 2px 1px 5px 6px black;
   padding-bottom: 15px;
   border-radius: 25px;
   color: white;
@@ -563,8 +554,8 @@ section.opening-menu ul.menu li.menu-item:hover {
   background-color: white;
   transition: 0.3s;
 }
-/* OPENING HOURS STYLE END */
 
+/* OPENING HOURS STYLE END */
 /* WORK STYLES START */
 .slider-img {
   max-width: 500px;
@@ -599,10 +590,9 @@ div.work-grid {
   align-items: center;
   align-self: center;
 }
+
 /* WORK STYLES END */
-
 /* QUOTE STYLES START */
-
 .quote-wrapper {
   margin-bottom: 35px;
   height: 95vh;
@@ -628,7 +618,6 @@ section.quote-wrapper h2::after {
 
 section.quote-wrapper input.entry, section.quote-wrapper section.entry {
   max-width: 350px;
-
 }
 
 section.quote-wrapper label.title {
@@ -640,13 +629,12 @@ section.quote-wrapper label.title {
   color: white;
 }
 
-section.quote-wrapper div.quote-group {
-}
+section.quote-wrapper div.quote-group {}
 
 section.quote-wrapper form {
-    width: 500px;
-    margin: 0 auto;
-    display: block;
+  width: 500px;
+  margin: 0 auto;
+  display: block;
 }
 
 section.quote-wrapper textarea {
@@ -674,9 +662,9 @@ canvas {
 }
 
 /* QUOTE STYLES END */
-
 /* FOOTER */
 footer {
+  z-index: 0;
   position: relative;
   height: 120px;
   background: black;
@@ -704,3 +692,46 @@ img.social-img:hover {
 }
 
 /* FOOTER START */
+/* SERVICES START */
+section.cover-main.services {
+  background: black;
+}
+
+section.service-list h2.services {
+  font-weight: 800;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+section.service-list {
+  background-color: red;
+  padding: 0;
+  margin: 0;
+}
+
+section.service-list div.service-grid {
+  width: 100%;
+  background-color: green;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-self: center;
+}
+
+div.service-grid div.service-grid-item {
+  background-color: blue;
+  width: 450px;
+  height: auto;
+  padding: 15px 30px;
+  margin: 45px 45px;
+}
+
+div.service-grid-item h2.service-grid-title {
+  color: #7a7575;
+  font-family: 'Catamaran', sans-serif;
+}
+
+div.service-grid-item p.service {
+
+}
+
+/* SERVICES END */
