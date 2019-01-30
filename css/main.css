@@ -834,14 +834,13 @@ div.gallery-menu {
 /* SERVICES END */
 /* GALLERY START */
 section.gallery {
-  margin-top: 60px;
-  display: flex;
-  justify-content: center;
+  margin-top: 120px;
 }
 
 h2.gallery {
+  font-weight: 800;
+  font-family: 'Open Sans', sans-serif !important;
   color: black;
-  margin-top: 80px;
 }
 h2.gallery::after {
   display: block;
@@ -850,6 +849,11 @@ h2.gallery::after {
   content: '';
   width: 100px;
   margin: 30px auto 0 auto;
+}
+
+div.build-grid,
+div.repair-grid {
+  margin: 0 auto;
 }
 
 div.build-grid img {
