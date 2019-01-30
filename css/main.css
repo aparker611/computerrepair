@@ -394,6 +394,7 @@ button#slick-slide-control00,
 button#slick-slide-control01,
 button#slick-slide-control02,
 button#slick-slide-control03,
+button#slick-slide-control04,
 button#slick-slide-control10,
 button#slick-slide-control11,
 button#slick-slide-control12,
@@ -410,6 +411,7 @@ button#slick-slide-control00:hover,
 button#slick-slide-control01:hover,
 button#slick-slide-control02:hover,
 button#slick-slide-control03:hover,
+button#slick-slide-control04:hover,
 button#slick-slide-control10:hover,
 button#slick-slide-control11:hover,
 button#slick-slide-control12:hover,
@@ -425,6 +427,7 @@ li.slick-active button#slick-slide-control00,
 li.slick-active button#slick-slide-control01,
 li.slick-active button#slick-slide-control02,
 li.slick-active button#slick-slide-control03,
+li.slick-active button#slick-slide-control04,
 li.slick-active button#slick-slide-control10,
 li.slick-active button#slick-slide-control11,
 li.slick-active button#slick-slide-control12,
@@ -433,7 +436,7 @@ li.slick-active button#slick-slide-control14,
 li.slick-active button#slick-slide-control15,
 li.slick-active button#slick-slide-control16,
 li.slick-active button#slick-slide-control17 {
-  background-color: silver;
+  background-color: rgb(0, 0, 0, 0.8);
   opacity: 0.9;
 }
 
@@ -550,16 +553,16 @@ section.opening-menu h2.sub-title::after {
   margin: 30px auto 0 auto;
 }
 
-section.opening-menu ul.menu {
+.menu {
   margin: 0 30px;
 }
 
-section.opening-menu ul.menu li.menu-item {
+li.menu-item {
   font-size: 22px;
   line-height: 27px;
 }
 
-section.opening-menu ul.menu li.menu-item:hover {
+li.menu-item:hover {
   color: black;
   background-color: white;
   transition: 0.3s;
@@ -753,6 +756,7 @@ div.service-grid div.service-grid-item {
   border: 1px solid black;
   -webkit-box-shadow: 5px 5px 50px 5px rgba(0, 0, 0, 0.69);
   box-shadow: 5px 5px 50px 5px rgba(0, 0, 0, 0.69);
+  transition: 0.3s;
 }
 
 div.service-grid div.service-grid-item:hover {
@@ -784,7 +788,8 @@ div.image-frame iframe.service-image {
   max-width: 130px;
 }
 
-div.service-menu {
+div.service-menu,
+div.gallery-menu {
   width: 350px;
   margin: 0 auto;
   padding: 15px 15px;
@@ -795,28 +800,138 @@ div.service-menu {
 }
 
 .price-btn,
-.gallery-btn {
+.gallery-btn,
+.build-btn,
+.repair-btn {
   margin: 0 auto;
   display: inline-block;
   padding: 10px 20px;
   border: 1px solid white;
   background: transparent;
-  color: white;
+  color: white !important;
   background-color: black;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .price-btn:hover,
-.gallery-btn:hover {
-  background: rgba(0, 0, 0, 0.8);
-  color: rgb(157, 157, 157);
+.gallery-btn:hover,
+.build-btn:hover,
+.repair-btn:hover {
+  background: rgba(6, 129, 118, 0.5);
+  color: white !important;
   transition: 0.3s;
   text-decoration: none;
   transform: scale(1.2);
   transition: 0.3s;
+  cursor: pointer;
+}
+
+.active {
+  background: rgba(6, 129, 118, 0.5);
 }
 
 /* SERVICES END */
+/* GALLERY START */
+section.gallery {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+h2.gallery {
+  color: black;
+  margin-top: 80px;
+}
+h2.gallery::after {
+  display: block;
+  height: 2px;
+  background-color: black;
+  content: '';
+  width: 100px;
+  margin: 30px auto 0 auto;
+}
+
+div.build-grid img {
+  width: 360px;
+  height: 360px;
+  margin: 20px 25px;
+  transition: 0.3s;
+}
+
+div.repair-grid img {
+  width: 360px;
+  height: 360px;
+  margin: 20px 25px;
+  transition: 0.3s;
+}
+
+div.repair-grid img:hover,
+div.build-grid img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+div.grid-item {
+  margin: 0 auto;
+}
+
+/* GALLERY END */
+/* PRICING START */
+section.pricing {
+  background-color: red;
+  width: 1200px;
+  height: 600px;
+  margin: 60px auto 60px auto;
+  border-radius: 25px;
+  border: 1px solid black;
+  -webkit-box-shadow: 5px 5px 50px 5px rgba(0, 0, 0, 0.69);
+  box-shadow: 5px 5px 50px 5px rgba(0, 0, 0, 0.69);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2.price {
+  margin-top: 80px;
+  font-weight: 800;
+  font-family: 'Open Sans', sans-serif !important;
+  color: black;
+}
+
+h2.price::after {
+  display: block;
+  height: 2px;
+  background-color: black;
+  content: '';
+  width: 100px;
+  margin: 30px auto 0 auto;
+}
+
+ul.pricing-list {
+  position: absolute;
+
+  width: 1200px;
+}
+
+li.pricing-item {
+  list-style: none;
+  font-size: 25px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+  transition: 0.3s;
+}
+
+li.pricing-item:hover {
+  cursor: pointer;
+  background-color: white;
+  transition: 0.3s;
+}
+
+/* PRICING END */
+
 h2.test {
   font-size: 30px;
   line-height: 35px;
