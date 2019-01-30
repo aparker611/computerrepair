@@ -553,16 +553,16 @@ section.opening-menu h2.sub-title::after {
   margin: 30px auto 0 auto;
 }
 
-section.opening-menu ul.menu {
+.menu {
   margin: 0 30px;
 }
 
-section.opening-menu ul.menu li.menu-item {
+li.menu-item {
   font-size: 22px;
   line-height: 27px;
 }
 
-section.opening-menu ul.menu li.menu-item:hover {
+li.menu-item:hover {
   color: black;
   background-color: white;
   transition: 0.3s;
@@ -756,6 +756,7 @@ div.service-grid div.service-grid-item {
   border: 1px solid black;
   -webkit-box-shadow: 5px 5px 50px 5px rgba(0, 0, 0, 0.69);
   box-shadow: 5px 5px 50px 5px rgba(0, 0, 0, 0.69);
+  transition: 0.3s;
 }
 
 div.service-grid div.service-grid-item:hover {
@@ -817,13 +818,17 @@ div.gallery-menu {
 .gallery-btn:hover,
 .build-btn:hover,
 .repair-btn:hover {
-  background: rgba(0, 0, 0, 0.8);
-  color: rgb(157, 157, 157) !important;
+  background: rgba(6, 129, 118, 0.5);
+  color: white !important;
   transition: 0.3s;
   text-decoration: none;
   transform: scale(1.2);
   transition: 0.3s;
   cursor: pointer;
+}
+
+.active {
+  background: rgba(6, 129, 118, 0.5);
 }
 
 /* SERVICES END */
@@ -861,6 +866,61 @@ div.grid-item {
 }
 
 /* GALLERY END */
+/* PRICING START */
+section.pricing {
+  background-color: red;
+  width: 1200px;
+  height: 600px;
+  margin: 60px auto 60px auto;
+  border-radius: 25px;
+  border: 1px solid black;
+  -webkit-box-shadow: 5px 5px 50px 5px rgba(0, 0, 0, 0.69);
+  box-shadow: 5px 5px 50px 5px rgba(0, 0, 0, 0.69);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2.price {
+  margin-top: 80px;
+  font-weight: 800;
+  font-family: 'Open Sans', sans-serif !important;
+  color: black;
+}
+
+h2.price::after {
+  display: block;
+  height: 2px;
+  background-color: black;
+  content: '';
+  width: 100px;
+  margin: 30px auto 0 auto;
+}
+
+ul.pricing-list {
+  position: absolute;
+
+  width: 1200px;
+}
+
+li.pricing-item {
+  list-style: none;
+  font-size: 25px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+  transition: 0.3s;
+}
+
+li.pricing-item:hover {
+  cursor: pointer;
+  background-color: white;
+  transition: 0.3s;
+}
+
+/* PRICING END */
+
 h2.test {
   font-size: 30px;
   line-height: 35px;

@@ -49,6 +49,9 @@ $(document).ready(function() {
       if($gallery_menu == true) {
         $('.build-grid').hide();
         $('.repair-grid').show();
+
+        $('.build-btn').removeClass('active');
+        $('.repair-btn').addClass('active');
         $gallery_menu = false
       }
     });
@@ -57,10 +60,68 @@ $(document).ready(function() {
       if($gallery_menu == false) {
         $('.build-grid').show();
         $('.repair-grid').hide();
+        $('.build-btn').addClass('active');
+        $('.repair-btn').removeClass('active');
 
         $gallery_menu = true;
       }
     })
+  } else if (window.location.pathname === "/pricing.html") {
+    $('.clean').hide();
+    $('.screen').hide();
+    $('.data').hide();
+    $('.home-week').hide();
+    $('.home-end').hide();
+
+    console.log("Loaded successfully");
+    $('.cleanup').hover(function() {
+      $('.clean').show();
+      $('.screen').hide();
+      $('.data').hide();
+      $('.home-week').hide();
+      $('.home-end').hide();
+    });
+
+    $('.screen-replacement').hover(function() {
+      $('.clean').hide();
+      $('.screen').show();
+      $('.data').hide();
+      $('.home-week').hide();
+      $('.home-end').hide();
+    });
+
+    $('.data-transfer').hover(function() {
+      $('.clean').hide();
+      $('.screen').hide();
+      $('.data').show();
+      $('.home-week').hide();
+      $('.home-end').hide();
+    });
+
+    $('.home-weekday').hover(function() {
+      $('.clean').hide();
+      $('.screen').hide();
+      $('.data').hide();
+      $('.home-week').show();
+      $('.home-end').hide();
+
+    });
+
+    $('.home-weekend').hover(function() {
+      $('.clean').hide();
+      $('.screen').hide();
+      $('.data').hide();
+      $('.home-week').hide();
+      $('.home-end').show();
+    });
+
+    $('.screen-replacement').click(function() {
+      $('.clean').hide();
+      $('.screen').show();
+      $('.data').hide();
+      $('.home-week').hide();
+      $('.home-end').hide();
+    });
   }
   //END
 
