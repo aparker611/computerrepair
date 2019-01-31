@@ -323,7 +323,7 @@ ul#scene {
 section.slider {
   margin: 0 auto;
   padding: 15px 8px;
-  z-index: 500;
+  z-index: 500 !important;
 }
 
 div.slider-grid {
@@ -883,7 +883,7 @@ div.grid-item {
 /* GALLERY END */
 /* PRICING START */
 section.pricing {
-  background-color: red;
+  background-color: black;
   width: 1200px;
   height: 600px;
   margin: 60px auto 60px auto;
@@ -915,7 +915,7 @@ h2.price::after {
 
 ul.pricing-list {
   position: absolute;
-
+  color: white;
   width: 1200px;
 }
 
@@ -926,12 +926,35 @@ li.pricing-item {
   padding: 0;
   margin: 0;
   transition: 0.3s;
+  width: 800px;
+  margin: 0 auto;
 }
 
 li.pricing-item:hover {
   cursor: pointer;
   background-color: white;
   transition: 0.3s;
+  color: black;
+  border-radius: 25px;
+}
+
+li.clean,
+li.screen,
+li.data,
+li.home-week,
+li.home-end {
+  background-color: white;
+  color:  black;
+  border: 1px solid black;
+  width: 800px;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
+p.notice {
+  color: white;
+  display: flex;
+  align-self: flex-end;
 }
 
 /* PRICING END */

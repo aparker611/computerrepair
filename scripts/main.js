@@ -4,6 +4,15 @@ $(document).ready(function() {
   var $sticky = $header.before($header.clone().addClass("sticky"));
   var $gallery_menu = true
 
+  function sleep(milliseconds) {
+    var start = new Date().getTime();
+    for (var i = 0; i < 1e7; i++) {
+      if ((new Date().getTime() - start) > milliseconds){
+        break;
+      }
+    }
+  }
+
   // Make sure scripts run on certain pages START
   if (window.location.pathname === "/index.html" || window.location.pathname === "/index.html#" || window.location.pathname === "/") {
     //Sticky menu
@@ -67,61 +76,19 @@ $(document).ready(function() {
       }
     })
   } else if (window.location.pathname === "/pricing.html") {
-    $('.clean').hide();
-    $('.screen').hide();
-    $('.data').hide();
-    $('.home-week').hide();
-    $('.home-end').hide();
 
     console.log("Loaded successfully");
-    $('.cleanup').hover(function() {
-      $('.clean').show();
-      $('.screen').hide();
-      $('.data').hide();
-      $('.home-week').hide();
-      $('.home-end').hide();
-    });
-
-    $('.screen-replacement').hover(function() {
-      $('.clean').hide();
-      $('.screen').show();
-      $('.data').hide();
-      $('.home-week').hide();
-      $('.home-end').hide();
-    });
-
-    $('.data-transfer').hover(function() {
-      $('.clean').hide();
-      $('.screen').hide();
-      $('.data').show();
-      $('.home-week').hide();
-      $('.home-end').hide();
-    });
-
-    $('.home-weekday').hover(function() {
-      $('.clean').hide();
-      $('.screen').hide();
-      $('.data').hide();
-      $('.home-week').show();
-      $('.home-end').hide();
-
-    });
-
-    $('.home-weekend').hover(function() {
-      $('.clean').hide();
-      $('.screen').hide();
-      $('.data').hide();
-      $('.home-week').hide();
-      $('.home-end').show();
-    });
-
-    $('.screen-replacement').click(function() {
-      $('.clean').hide();
-      $('.screen').show();
-      $('.data').hide();
-      $('.home-week').hide();
-      $('.home-end').hide();
-    });
+    $( ".pricing-item" )
+      .filter( ":odd" )
+        .hide()
+      .end()
+      .filter( ":even" )
+        .hover(function() {
+          $( this )
+            .next()
+              .stop( true, true )
+              .slideToggle();
+        });
   }
   //END
 
