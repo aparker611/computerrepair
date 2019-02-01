@@ -608,7 +608,7 @@ div.work-grid {
 /* QUOTE STYLES START */
 .quote-wrapper {
   margin-bottom: 35px;
-  height: 95vh;
+  height: 800px;
   padding-bottom: 20px;
   margin: 0 auto;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero-bg.jpg") no-repeat bottom right / cover;
@@ -928,6 +928,7 @@ li.pricing-item {
   transition: 0.3s;
   width: 800px;
   margin: 0 auto;
+  transition: 0.5s;
 }
 
 li.pricing-item:hover {
@@ -944,11 +945,12 @@ li.data,
 li.home-week,
 li.home-end {
   background-color: white;
-  color:  black;
+  color:  darkgreen;
   border: 1px solid black;
   width: 800px;
   margin: 0 auto;
   border-radius: 25px;
+  transition: 0.5s;
 }
 
 p.notice {
