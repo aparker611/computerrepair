@@ -608,7 +608,7 @@ div.work-grid {
 /* QUOTE STYLES START */
 .quote-wrapper {
   margin-bottom: 35px;
-  height: 95vh;
+  height: 800px;
   padding-bottom: 20px;
   margin: 0 auto;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero-bg.jpg") no-repeat bottom right / cover;
@@ -928,6 +928,7 @@ li.pricing-item {
   transition: 0.3s;
   width: 800px;
   margin: 0 auto;
+  transition: 0.5s;
 }
 
 li.pricing-item:hover {
@@ -944,11 +945,12 @@ li.data,
 li.home-week,
 li.home-end {
   background-color: white;
-  color:  black;
+  color:  darkgreen;
   border: 1px solid black;
   width: 800px;
   margin: 0 auto;
   border-radius: 25px;
+  transition: 0.5s;
 }
 
 p.notice {
@@ -958,6 +960,56 @@ p.notice {
 }
 
 /* PRICING END */
+
+/* ABOUT START */
+section.about-me {
+  background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 237, 0, 0.5)), url("../images/skyscrape.jpg") no-repeat;
+  background-size: 100%;
+  width: 1200px;
+  height: auto;
+  margin: 60px auto 60px auto;
+  border-radius: 25px;
+  border: 1px solid black;
+  -webkit-box-shadow: 5px 5px 50px 5px rgba(0, 0, 0, 0.69);
+  box-shadow: 5px 5px 50px 5px rgba(0, 0, 0, 0.69);
+  text-align: center;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  padding: 40px 40px 40px 40px;
+}
+
+h2.about {
+  margin-top: 80px;
+  font-weight: 800;
+  font-family: 'Open Sans', sans-serif !important;
+  color: black;
+}
+
+h2.about::after {
+  display: block;
+  height: 2px;
+  background-color: black;
+  content: '';
+  width: 100px;
+  margin: 30px auto 0 auto;
+}
+
+div.about-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
+  border-radius: 25px;
+  height: auto;
+  padding: 80px 0px 80px 0px;
+}
+
+div.about-container p {
+  font-size: 20px;
+  line-height: 25px;
+  color: white;
+  text-align: center;
+  margin: 0 30px 0 30px;
+}
+/* ABOUT END */
 
 h2.test {
   font-size: 30px;
