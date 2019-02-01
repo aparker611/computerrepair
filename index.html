@@ -1,7 +1,5 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
-<head lang="en">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!--<meta property="og:title" content="" />-->
@@ -15,6 +13,7 @@
   <!-- Slick JS Stylesheets -->
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat|Open+Sans|Roboto+Condensed|Oswald:200" rel="stylesheet">
@@ -29,6 +28,20 @@
 <body>
   <section class="cover-main" id="top">
     <header>
+    <div class="topnav">
+      <a href="/index.html">
+        <img src="images/logofinal.png" alt="logo" class="logo">
+      </a>
+      <div id="mylinks">
+        <a href="/">Home</a>
+        <a href="/services.html">My Services</a>
+        <a href="/pricing.html">Pricing</a>
+        <a href="/about.html">About Me</a>
+        <a href="#footer">Footer</a>
+      </div>
+      <a href="javascript:void(0);" class="icon"><i class="fa fa-bars"></i></a>
+    </div>
+
       <nav class="nav-wrapper">
         <div class="logo">
           <a href="/index.html">
@@ -169,6 +182,7 @@
   <script src="scripts/parallax.min.js"></script>
   <script src="scripts/slick.min.js"></script>
   <script src="scripts/particles.min.js"></script>
+  <script src="scripts/detectmobile.min.js"></script>
   <script src="scripts/main.js"></script>
   <script>
     var scene = document.getElementById('scene');

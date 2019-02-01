@@ -198,7 +198,36 @@ p.description {
   width: 100%;
   margin: 0 auto;
 }
+/* HAMBURGER MENU START */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
 
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 22px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a.icon:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* HAMBURGER MENU END */
 /* NAVIGATION BAR + HEADER STYLE START */
 header {
   background: transparent;
@@ -707,7 +736,6 @@ img.social-img:hover {
 /* FOOTER START */
 /* SERVICES START */
 section.cover-main.services {
-  min-width: 1200px;
   height: auto;
   background: rgba(0, 0, 0, 0.9);
   position: fixed;
@@ -743,12 +771,13 @@ section.service-list div.service-grid {
   justify-content: space-evenly;
   align-items: space-evenly;
   align-self: space-evenly;
+  flex-wrap: wrap;
 }
 
 div.service-grid div.service-grid-item {
   background-color: white;
-  min-width: 305px;
   width: auto;
+  max-width: 350px;
   height: auto;
   padding: 15px 30px;
   margin: 45px 45px;
@@ -757,6 +786,8 @@ div.service-grid div.service-grid-item {
   -webkit-box-shadow: 5px 5px 50px 5px rgba(0, 0, 0, 0.69);
   box-shadow: 5px 5px 50px 5px rgba(0, 0, 0, 0.69);
   transition: 0.3s;
+
+  font-size: 10px !important;
 }
 
 div.service-grid div.service-grid-item:hover {
@@ -884,7 +915,8 @@ div.grid-item {
 /* PRICING START */
 section.pricing {
   background-color: black;
-  width: 1200px;
+  width: auto;
+  max-width: 80%;
   height: 600px;
   margin: 60px auto 60px auto;
   border-radius: 25px;
@@ -965,7 +997,8 @@ p.notice {
 section.about-me {
   background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 237, 0, 0.5)), url("../images/skyscrape.jpg") no-repeat;
   background-size: 100%;
-  width: 1200px;
+  width: auto;
+  max-width: 80%;
   height: auto;
   margin: 60px auto 60px auto;
   border-radius: 25px;
