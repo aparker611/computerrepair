@@ -35,6 +35,8 @@ $(document).ready(function() {
     $('.slider-img').css("width", "150px");
     $('.slider-img').css("height", "150px");
 
+    $('.about-me').css("max-width", "100%");
+
 
 
   } else {
