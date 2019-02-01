@@ -198,7 +198,36 @@ p.description {
   width: 100%;
   margin: 0 auto;
 }
+/* HAMBURGER MENU START */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
 
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 22px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a.icon:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* HAMBURGER MENU END */
 /* NAVIGATION BAR + HEADER STYLE START */
 header {
   background: transparent;
@@ -743,6 +772,7 @@ section.service-list div.service-grid {
   justify-content: space-evenly;
   align-items: space-evenly;
   align-self: space-evenly;
+  flex-wrap: wrap;
 }
 
 div.service-grid div.service-grid-item {
@@ -884,7 +914,7 @@ div.grid-item {
 /* PRICING START */
 section.pricing {
   background-color: black;
-  width: 1200px;
+  width: auto;
   height: 600px;
   margin: 60px auto 60px auto;
   border-radius: 25px;

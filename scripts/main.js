@@ -3,6 +3,43 @@ $(document).ready(function() {
   var $header = $('header');
   var $sticky = $header.before($header.clone().addClass("sticky"));
   var $gallery_menu = true
+  $('.topnav').hide();
+
+  // HAMBURGER menu
+
+  if( jQuery.browser.mobile ) {
+    console.log("mobile");
+    /* Showing hamburger menu and hiding our original navigation */
+    $('.topnav').show();
+    $('.nav-wrapper').hide();
+    $('div').find('#mylinks').hide();
+
+    var menuOpen = false;
+
+    $('.icon').click(function() {
+      if( menuOpen == false ) {
+        $('div').find('#mylinks').show();
+        menuOpen = true;
+      } else {
+        $('div').find('#mylinks').hide();
+        menuOpen = false;
+      }
+    });
+
+    /* Changing CSS to setup mobile use*/
+    $('.logo').css('width', 50);
+    $('.quote-wrapper').find("textarea").css("width", 350);
+    $('#particles-js').css("width", "100%");
+    $('.cover-main').css("margin-top", 0);
+
+    $('.slider-img').css("width", "150px");
+    $('.slider-img').css("height", "150px");
+
+
+
+  } else {
+    console.log("nope");
+  }
 
   function sleep(milliseconds) {
     var start = new Date().getTime();
