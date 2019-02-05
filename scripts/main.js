@@ -32,7 +32,7 @@ $(document).ready(function() {
     $('#particles-js').css("width", "100%");
     $('.cover-main').css("margin-top", 0);
 
-    $('.slider-img').css("width", "150px");
+    $('.slider-img').css("width", "200px");
     $('.slider-img').css("height", "150px");
 
     $('.about-me').css("max-width", "100%");
