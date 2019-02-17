@@ -290,6 +290,8 @@ header .logo img {
   background-repeat: no-repeat;
   background-size: cover;
   height: 60vh;
+  margin: 0;
+  padding: 0;
 }
 
 ul#scene li.name {
@@ -637,7 +639,7 @@ div.work-grid {
 /* QUOTE STYLES START */
 .quote-wrapper {
   margin-bottom: 35px;
-  height: 800px;
+  height: 900px;
   padding-bottom: 20px;
   margin: 0 auto;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero-bg.jpg") no-repeat bottom right / cover;
@@ -671,8 +673,6 @@ section.quote-wrapper label.title {
   color: white;
 }
 
-section.quote-wrapper div.quote-group {}
-
 section.quote-wrapper form {
   width: 500px;
   margin: 0 auto;
@@ -686,6 +686,10 @@ section.quote-wrapper textarea {
 
 .submit-btn {
   margin: 0 100px;
+}
+
+span.agreement {
+  color: gray;
 }
 
 .btn-primary {
@@ -819,6 +823,12 @@ div.image-frame iframe.service-image {
   max-width: 130px;
 }
 
+img.service-image {
+  min-width: 80px;
+  max-width: 130px;
+  padding: 24px 24px;
+}
+
 div.service-menu,
 div.gallery-menu {
   width: 350px;
@@ -946,9 +956,8 @@ h2.price::after {
 }
 
 ul.pricing-list {
-  position: absolute;
   color: white;
-  width: 1200px;
+  position: absolute;
 }
 
 li.pricing-item {
@@ -958,7 +967,7 @@ li.pricing-item {
   padding: 0;
   margin: 0;
   transition: 0.3s;
-  width: 800px;
+  width: auto;
   margin: 0 auto;
   transition: 0.5s;
 }
@@ -979,7 +988,7 @@ li.home-end {
   background-color: white;
   color:  darkgreen;
   border: 1px solid black;
-  width: 800px;
+  width: auto;
   margin: 0 auto;
   border-radius: 25px;
   transition: 0.5s;

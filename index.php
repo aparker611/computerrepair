@@ -26,33 +26,34 @@
 </head>
 
 <body>
+  <!-- MOBILE NAV BAR -->
   <section class="cover-main" id="top">
     <header>
     <div class="topnav">
-      <a href="/index.html">
+      <a href="/index.php">
         <img src="images/logofinal.png" alt="logo" class="logo">
       </a>
       <div id="mylinks">
         <a href="/">Home</a>
-        <a href="/services.html">My Services</a>
-        <a href="/pricing.html">Pricing</a>
-        <a href="/about.html">About Me</a>
+        <a href="/services.php">My Services</a>
+        <a href="/pricing.php">Pricing</a>
+        <a href="/about.php">About Me</a>
         <a href="#footer">Footer</a>
       </div>
       <a href="javascript:void(0);" class="icon"><i class="fa fa-bars"></i></a>
     </div>
-
+<!-- DESKTOP NAV BAR -->
       <nav class="nav-wrapper">
         <div class="logo">
-          <a href="/index.html">
+          <a href="/index.php">
             <img src="images/logofinal.png" alt="logo" class="logo">
           </a>
         </div>
         <ul class="menu">
           <li><a href="#top">Home</a></li>
-          <li><a href="/services.html">My Services</a></li>
-          <li><a href="/pricing.html">Pricing</a></li>
-          <li><a href="/about.html">About</a></li>
+          <li><a href="/services.php">My Services</a></li>
+          <li><a href="/pricing.php">Pricing</a></li>
+          <li><a href="/about.php">About</a></li>
           <li><a href="#footer">Footer</a></li>
         </ul>
       </nav>
@@ -62,7 +63,7 @@
         <li class="layer name" data-depth="0.30">Adam Parker</li>
         <li class="layer title" data-depth="0.50">Computer Technician</li>
         <li class="layer btn btn-main" data-depth="0.90">
-          <a href="/services.html" class="service-btn">View Services</a>
+          <a href="/services.php" class="service-btn">View Services</a>
           <a href="#quote" class="quote-btn">Free Quote</a>
         </li>
       </ul>
@@ -91,9 +92,10 @@
   <section class="information">
     <div class="info">
       <h2 class="sub-title">What I do</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>As a computer technician I have repaired many different types of systems, ranging from old computers made in 2000's to modern gaming computers, I take pride in my work even repairing industrial computers that are used in trucks and vans, my services include: general cleanups,
+virus removals, data transfers, screen replacements, casing replacements and other general repairs that can be found <a href="/services.php">here.</a></br></br>
+
+I also setup up new computer systems and can arrange for routine maintenance to be performed.</br> As well as build a new gaming system for you, if you have any questions feel free to ask on the <a href="#quote">quote</a> section and I will get back to you within 24 hours.</p>
     </div>
   </section>
   <section class="slider work-time">
@@ -114,42 +116,50 @@
     <div class="container">
       <div class="row">
         <div id="particles-js"></div>
-        <form>
+        <form action="PHP/sendmail.php" method="post">
           <div id="particles-js"></div>
           <div class="col-sm">
             <div class="form-group quote-group">
-              <label for="fname" class="title">First Name</label>
+              <label name="fname" class="title">First Name</label>
               <input type="text" class="form-control entry" id="fname" placeholder="Enter Lirst Name">
             </div>
             <div class="form-group quote-group">
-              <label for="lname" class="title">Last Name</label>
+              <label name="lname" class="title">Last Name</label>
               <input type="text" class="form-control entry" id="lname" placeholder="Enter Last Name">
             </div>
             <div class="form-group quote-group">
-              <label for="email" class="title">Email</label>
+              <label name="email" class="title">Email</label>
               <input type="email" class="form-control entry" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
             </div>
           </div>
           <div class="col-sm">
             <div class="form-group quote-group">
-              <label for="phone" class="title">Contact number</label>
+              <label name="phone" class="title">Contact number</label>
               <input type="tel" class="form-control entry" id="phone" placeholder="Enter phone number">
             </div>
             <div class="form-group quote-group">
-              <label for="issue" class="title">Describe problem</label>
-              <textarea type="tel" class="form-control entry" id="issue" placeholder="problem"></textarea>
+              <label name="desc" class="title">Describe problem</label>
+              <textarea type="tel" class="form-control entry" id="issue" placeholder="describe your issue."></textarea>
             </div>
             <div class="form-group quote-group">
-              <label for="issue" class="title">Type of issue</label>
-              <select class="form-control entry" id="issue">
+              <label name="issue" class="title">Type of issue</label>
+              <select class="form-control entry" id="selectissue">
                 <option value="Desktop">Desktop</option>
                 <option value="Laptop">Laptop</option>
+                <option value="Advice">General Question</option>
                 <option value="Hardware">Hardware</option>
                 <option value="Software">Software</option>
+                <option value="Other">Other</option>
+                <option value="Business">Business</option>
               </select>
             </div>
+
+            <div class="agree">
+              <input type="checkbox" name="agree" value="1" class="agreement">
+              <span class="agreement">By ticking this box you agree that your information will be used to send an email for business purposes and no data will be sold or used for other purposes.</span>
+            </div>
             <div class="submit-btn">
-              <button type="submit" class=" btn-primary center" align="center">Submit</button>
+              <button type="submit" class=" btn-primary center" align="center" id="submit">Submit</button>
             </div>
           </div>
         </form>
@@ -183,6 +193,7 @@
   <script src="scripts/slick.min.js"></script>
   <script src="scripts/particles.min.js"></script>
   <script src="scripts/detectmobile.min.js"></script>
+  <script src="scripts/form_validation.js"></script>
   <script src="scripts/main.js"></script>
   <script>
     var scene = document.getElementById('scene');

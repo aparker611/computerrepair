@@ -32,7 +32,7 @@ $(document).ready(function() {
     $('#particles-js').css("width", "100%");
     $('.cover-main').css("margin-top", 0);
 
-    $('.slider-img').css("width", "150px");
+    $('.slider-img').css("width", "200px");
     $('.slider-img').css("height", "150px");
 
     $('.about-me').css("max-width", "100%");
@@ -40,7 +40,6 @@ $(document).ready(function() {
 
 
   } else {
-    console.log("nope");
   }
 
   function sleep(milliseconds) {
@@ -53,7 +52,7 @@ $(document).ready(function() {
   }
 
   // Make sure scripts run on certain pages START
-  if (window.location.pathname === "/index.html" || window.location.pathname === "/index.html#" || window.location.pathname === "/") {
+  if (window.location.pathname === "/index.php" || window.location.pathname === "/index.php#" || window.location.pathname === "/") {
     //Sticky menu
     $(window).on("scroll", function() {
       var scrollFromTop = $(window).scrollTop();
@@ -78,7 +77,7 @@ $(document).ready(function() {
     //Particles JS
     console.log('callback - particles js config loaded');
     particlesJS.load('particles-js', '/particles.json', function() {});
-  } else if (window.location.pathname === "/gallery.html") {
+  } else if (window.location.pathname === "/gallery.php") {
     console.log("ONLY GALLERY");
     $('.build-grid').masonry({
       columnWidth: 50,
@@ -114,7 +113,7 @@ $(document).ready(function() {
         $gallery_menu = true;
       }
     })
-  } else if (window.location.pathname === "/pricing.html") {
+  } else if (window.location.pathname === "/pricing.php") {
 
     console.log("Loaded successfully");
     $( ".pricing-item" )
