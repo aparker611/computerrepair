@@ -290,6 +290,8 @@ header .logo img {
   background-repeat: no-repeat;
   background-size: cover;
   height: 60vh;
+  margin: 0;
+  padding: 0;
 }
 
 ul#scene li.name {
