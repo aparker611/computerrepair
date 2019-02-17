@@ -954,9 +954,8 @@ h2.price::after {
 }
 
 ul.pricing-list {
-  position: absolute;
   color: white;
-  width: 1200px;
+  position: absolute;
 }
 
 li.pricing-item {
@@ -966,7 +965,7 @@ li.pricing-item {
   padding: 0;
   margin: 0;
   transition: 0.3s;
-  width: 800px;
+  width: auto;
   margin: 0 auto;
   transition: 0.5s;
 }
@@ -987,7 +986,7 @@ li.home-end {
   background-color: white;
   color:  darkgreen;
   border: 1px solid black;
-  width: 800px;
+  width: auto;
   margin: 0 auto;
   border-radius: 25px;
   transition: 0.5s;

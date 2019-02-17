@@ -138,11 +138,11 @@ I also setup up new computer systems and can arrange for routine maintenance to 
             </div>
             <div class="form-group quote-group">
               <label name="desc" class="title">Describe problem</label>
-              <textarea type="tel" class="form-control entry" id="issue" placeholder="problem"></textarea>
+              <textarea type="tel" class="form-control entry" id="issue" placeholder="describe your issue."></textarea>
             </div>
             <div class="form-group quote-group">
               <label name="issue" class="title">Type of issue</label>
-              <select class="form-control entry" id="issue">
+              <select class="form-control entry" id="selectissue">
                 <option value="Desktop">Desktop</option>
                 <option value="Laptop">Laptop</option>
                 <option value="Advice">General Question</option>
@@ -154,11 +154,11 @@ I also setup up new computer systems and can arrange for routine maintenance to 
             </div>
 
             <div class="agree">
-              <input type="checkbox" name="agree" value="agreement">
+              <input type="checkbox" name="agree" value="1" class="agreement">
               <span class="agreement">By ticking this box you agree that your information will be used to send an email for business purposes and no data will be sold or used for other purposes.</span>
             </div>
             <div class="submit-btn">
-              <button type="submit" class=" btn-primary center" align="center" disabled>Submit</button>
+              <button type="submit" class=" btn-primary center" align="center" id="submit">Submit</button>
             </div>
           </div>
         </form>
@@ -192,6 +192,7 @@ I also setup up new computer systems and can arrange for routine maintenance to 
   <script src="scripts/slick.min.js"></script>
   <script src="scripts/particles.min.js"></script>
   <script src="scripts/detectmobile.min.js"></script>
+  <script src="scripts/form_validation.js"></script>
   <script src="scripts/main.js"></script>
   <script>
     var scene = document.getElementById('scene');

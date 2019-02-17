@@ -40,7 +40,6 @@ $(document).ready(function() {
 
 
   } else {
-    console.log("nope");
   }
 
   function sleep(milliseconds) {
