@@ -116,34 +116,34 @@ I also setup up new computer systems and can arrange for routine maintenance to 
     <div class="container">
       <div class="row">
         <div id="particles-js"></div>
-        <form action="PHP/sendmail.php" method="post">
+        <form onsubmit="emailjs.sendForm('gmail', 'contactform', this); return false;" method="post">
           <div id="particles-js"></div>
           <div class="col-sm">
             <div class="form-group quote-group">
               <label name="fname" class="title">First Name</label>
-              <input type="text" class="form-control entry" id="fname" placeholder="Enter Lirst Name">
+              <input type="text" class="form-control entry" id="fname" placeholder="Enter Lirst Name" name="fname">
             </div>
             <div class="form-group quote-group">
               <label name="lname" class="title">Last Name</label>
-              <input type="text" class="form-control entry" id="lname" placeholder="Enter Last Name">
+              <input type="text" class="form-control entry" id="lname" placeholder="Enter Last Name" name="lname">
             </div>
             <div class="form-group quote-group">
               <label name="email" class="title">Email</label>
-              <input type="email" class="form-control entry" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
+              <input type="email" class="form-control entry" id="email" aria-describedby="emailHelp" placeholder="Enter Email" name="email">
             </div>
           </div>
           <div class="col-sm">
             <div class="form-group quote-group">
               <label name="phone" class="title">Contact number</label>
-              <input type="tel" class="form-control entry" id="phone" placeholder="Enter phone number">
+              <input type="tel" class="form-control entry" id="phone" placeholder="Enter phone number" name="mobile">
             </div>
             <div class="form-group quote-group">
               <label name="desc" class="title">Describe problem</label>
-              <textarea type="tel" class="form-control entry" id="issue" placeholder="describe your issue."></textarea>
+              <textarea type="tel" class="form-control entry" id="issue" placeholder="describe your issue." name="description"></textarea>
             </div>
             <div class="form-group quote-group">
               <label name="issue" class="title">Type of issue</label>
-              <select class="form-control entry" id="selectissue">
+              <select class="form-control entry" id="selectissue" name="issue">
                 <option value="Desktop">Desktop</option>
                 <option value="Laptop">Laptop</option>
                 <option value="Advice">General Question</option>
@@ -155,7 +155,7 @@ I also setup up new computer systems and can arrange for routine maintenance to 
             </div>
 
             <div class="agree">
-              <input type="checkbox" name="agree" value="1" class="agreement">
+              <input type="checkbox" name="agree" value="1" class="agreement" name="agree">
               <span class="agreement">By ticking this box you agree that your information will be used to send an email for business purposes and no data will be sold or used for other purposes.</span>
             </div>
             <div class="submit-btn">
@@ -189,6 +189,7 @@ I also setup up new computer systems and can arrange for routine maintenance to 
     </ul>
   </section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
   <script src="scripts/parallax.min.js"></script>
   <script src="scripts/slick.min.js"></script>
   <script src="scripts/particles.min.js"></script>

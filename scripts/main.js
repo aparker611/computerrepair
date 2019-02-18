@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  emailjs.init("blank");
   var $menu = false;
   var $header = $('header');
   var $sticky = $header.before($header.clone().addClass("sticky"));
