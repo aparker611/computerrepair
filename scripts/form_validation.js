@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     function checkEmpty() {
 
-        // filter over the empty inputs
+         //filter over the empty inputs
 
         return $inputs.filter(function() {
             return !$.trim(this.value);

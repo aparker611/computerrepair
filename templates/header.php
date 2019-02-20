@@ -32,7 +32,7 @@
     <header>
       <!-- MOBILE NAV BAR -->
     <div class="topnav">
-      <a href="/index.html">
+      <a href="/index.php">
         <img src="images/logofinal.png" alt="logo" class="logo">
       </a>
       <div id="mylinks">
@@ -47,7 +47,7 @@
 <!-- MOBILE NAV BAR -->
       <nav class="nav-wrapper">
         <div class="logo">
-          <a href="/index.html">
+          <a href="/index.php">
             <img src="images/logofinal.png" alt="logo" class="logo">
           </a>
         </div>
