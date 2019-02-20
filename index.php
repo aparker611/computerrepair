@@ -116,7 +116,8 @@ I also setup up new computer systems and can arrange for routine maintenance to 
     <div class="container">
       <div class="row">
         <div id="particles-js"></div>
-        <form onsubmit="emailjs.sendForm('gmail', 'contactform', this); return false;" method="post">
+        <form onsubmit="sendEmail(self);" class="email">
+
           <div id="particles-js"></div>
           <div class="col-sm">
             <div class="form-group quote-group">
@@ -155,11 +156,11 @@ I also setup up new computer systems and can arrange for routine maintenance to 
             </div>
 
             <div class="agree">
-              <input type="checkbox" name="agree" value="1" class="agreement" name="agree">
+              <input type="checkbox" name="agree" class="agreement" name="agree">
               <span class="agreement">By ticking this box you agree that your information will be used to send an email for business purposes and no data will be sold or used for other purposes.</span>
             </div>
             <div class="submit-btn">
-              <button type="submit" class=" btn-primary center" align="center" id="submit">Submit</button>
+              <button type="submit" class=" btn-primary center submit" align="center" id="submit">Submit</button>
             </div>
           </div>
         </form>
@@ -195,6 +196,7 @@ I also setup up new computer systems and can arrange for routine maintenance to 
   <script src="scripts/particles.min.js"></script>
   <script src="scripts/detectmobile.min.js"></script>
   <script src="scripts/form_validation.js"></script>
+  <script src="scripts/email-handler.js"></script>
   <script src="scripts/main.js"></script>
   <script>
     var scene = document.getElementById('scene');

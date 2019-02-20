@@ -22,6 +22,7 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 <script src="scripts/slick.min.js"></script>
 <script src="scripts/parallax.min.js"></script>
 <script src="scripts/particles.min.js"></script>
