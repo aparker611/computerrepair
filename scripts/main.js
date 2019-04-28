@@ -75,7 +75,7 @@ $(document).ready(function() {
 
     //Particles JS
     console.log('callback - particles js config loaded');
-    particlesJS.load('particles-js', '/particles.json', function() {});
+    particlesJS.load('particles-js', '/computerrepair/particles.json', function() {});
   } else if (window.location.pathname === "/computerrepair/gallery.html") {
     console.log("ONLY GALLERY");
     $('.build-grid').masonry({
