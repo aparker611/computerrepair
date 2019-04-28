@@ -50,7 +50,7 @@ $(document).ready(function() {
       }
     }
   }
-
+console.log(window.location.pathname);
   // Make sure scripts run on certain pages START
   if (window.location.pathname === "/index.html" || window.location.pathname === "/index.html#" || window.location.pathname === "/") {
     //Sticky menu
