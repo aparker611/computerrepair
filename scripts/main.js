@@ -76,7 +76,7 @@ $(document).ready(function() {
     //Particles JS
     console.log('callback - particles js config loaded');
     particlesJS.load('particles-js', '/particles.json', function() {});
-  } else if (window.location.pathname === "/gallery.html") {
+  } else if (window.location.pathname === "/computerrepair/gallery.html") {
     console.log("ONLY GALLERY");
     $('.build-grid').masonry({
       columnWidth: 50,
@@ -112,7 +112,7 @@ $(document).ready(function() {
         $gallery_menu = true;
       }
     })
-  } else if (window.location.pathname === "/pricing.html") {
+  } else if (window.location.pathname === "/computerrepair/pricing.html") {
 
     console.log("Loaded successfully");
     $( ".pricing-item" )
