@@ -51,7 +51,7 @@ $(document).ready(function() {
     }
   }
   // Make sure scripts run on certain pages START
-  if (window.location.pathname === "/index.html" || window.location.pathname === "/index.html#" || window.location.pathname === "/") {
+  if (window.location.pathname === "/computerrepair/index.html" || window.location.pathname === "/computerrepair/index.html#" || window.location.pathname === "/computerrepair/") {
     //Sticky menu
     $(window).on("scroll", function() {
       var scrollFromTop = $(window).scrollTop();
