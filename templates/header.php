@@ -32,14 +32,14 @@
     <header>
       <!-- MOBILE NAV BAR -->
     <div class="topnav">
-      <a href="/index.php">
+      <a href="/index.html">
         <img src="images/logofinal.png" alt="logo" class="logo">
       </a>
       <div id="mylinks">
         <a href="/">Home</a>
-        <a href="/services.php">My Services</a>
-        <a href="/pricing.php">Pricing</a>
-        <a href="/about.php">About Me</a>
+        <a href="/services.html">My Services</a>
+        <a href="/pricing.html">Pricing</a>
+        <a href="/about.html">About Me</a>
         <a href="#footer">Footer</a>
       </div>
       <a href="javascript:void(0);" class="icon"><i class="fa fa-bars"></i></a>
@@ -47,15 +47,15 @@
 <!-- MOBILE NAV BAR -->
       <nav class="nav-wrapper">
         <div class="logo">
-          <a href="/index.php">
+          <a href="/index.html">
             <img src="images/logofinal.png" alt="logo" class="logo">
           </a>
         </div>
         <ul class="menu">
           <li><a href="/">Home</a></li>
-          <li><a href="/services.php">My Services</a></li>
-          <li><a href="/pricing.php">Pricing</a></li>
-          <li><a href="/about.php">About</a></li>
+          <li><a href="/services.html">My Services</a></li>
+          <li><a href="/pricing.html">Pricing</a></li>
+          <li><a href="/about.html">About</a></li>
           <li><a href="#footer">Footer</a></li>
         </ul>
       </nav>

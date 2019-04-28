@@ -1,9 +1,11 @@
 $(document).ready(function() {
-  emailjs.init("");
+  emailjs.init("user_dh4TohIa1ElFkNMSMgka8");
   //emailJS
 $(".submit").click(function(e) {
   e.preventDefault();
   sendEmail($("form.email"));
+  $('.submit').attr("disabled", true);
+  alert("sending.. please allow up to 30 seconds.")
 });
   function sendEmail(form) {
     var submit = $("#submit"),
@@ -22,10 +24,11 @@ $(".submit").click(function(e) {
       agreed:      agreed
     }
 
-    emailjs.send('gmail', 'contactform', quoteParams).then( function(response) {
+    emailjs.send('gmail', 'repairs', quoteParams).then( function(response) {
       alert("SUCCESS! Email was sent.", response.status, response.text);
-      submit.attr("disabled", "disabled");
+      $('.submit').attr("disabled", true);
     }, function(error) {
+      console.log(error);
       alert("ERROR, please try again.", error);
     });
     return false;

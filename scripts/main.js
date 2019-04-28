@@ -52,7 +52,7 @@ $(document).ready(function() {
   }
 
   // Make sure scripts run on certain pages START
-  if (window.location.pathname === "/index.php" || window.location.pathname === "/index.php#" || window.location.pathname === "/") {
+  if (window.location.pathname === "/index.html" || window.location.pathname === "/index.html#" || window.location.pathname === "/") {
     //Sticky menu
     $(window).on("scroll", function() {
       var scrollFromTop = $(window).scrollTop();
@@ -77,7 +77,7 @@ $(document).ready(function() {
     //Particles JS
     console.log('callback - particles js config loaded');
     particlesJS.load('particles-js', '/particles.json', function() {});
-  } else if (window.location.pathname === "/gallery.php") {
+  } else if (window.location.pathname === "/gallery.html") {
     console.log("ONLY GALLERY");
     $('.build-grid').masonry({
       columnWidth: 50,
@@ -113,7 +113,7 @@ $(document).ready(function() {
         $gallery_menu = true;
       }
     })
-  } else if (window.location.pathname === "/pricing.php") {
+  } else if (window.location.pathname === "/pricing.html") {
 
     console.log("Loaded successfully");
     $( ".pricing-item" )
