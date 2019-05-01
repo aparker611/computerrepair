@@ -1,0 +1,15 @@
+@import 'bootstrap/mixins/breakpoints';
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "reset.scss";
+
+
+
+@import "pages/index.scss";
+
+/* HELPERS & OVERRIDES */
+.btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 150px;
+}
