@@ -127,7 +127,7 @@ q:after {
 
 /*RESET CSS END*/
 section.header {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/bg/background.jpeg") bottom;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/bg/background.jpeg") right;
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh;
@@ -141,41 +141,52 @@ section.header {
     max-width: 100%; }
     section.header section.navigation nav div ul li a {
       color: white !important; }
-  section.header section.content ul {
-    margin-top: 100px; }
-    section.header section.content ul li.name {
-      text-align: center;
-      font-size: 40px;
-      line-height: 45px;
-      text-transform: uppercase;
-      color: white;
-      width: 99%; }
-    section.header section.content ul li.title {
-      text-align: center;
-      font-size: 30px;
-      line-height: 35px;
-      color: white;
-      width: 100%;
-      margin-top: 60px; }
-    section.header section.content ul li.btn a.service-btn,
-    section.header section.content ul li.btn a.quote-btn {
-      margin: 0 auto;
-      display: inline-block;
-      padding: 10px 20px;
-      border: 1px solid white;
-      background: transparent;
-      color: white;
-      text-decoration: none; }
-      section.header section.content ul li.btn a.service-btn:hover,
-      section.header section.content ul li.btn a.quote-btn:hover {
-        background-color: white;
-        color: black;
-        transition: 0.3s;
+  section.header section.content {
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.5); }
+    section.header section.content ul {
+      margin-top: 100px; }
+      section.header section.content ul li.name {
+        text-align: center;
+        font-size: 40px;
+        line-height: 45px;
+        text-transform: uppercase;
+        color: white;
+        width: 99%; }
+      section.header section.content ul li.title {
+        text-align: center;
+        font-size: 30px;
+        line-height: 35px;
+        color: white;
+        width: 100%;
+        margin-top: 60px; }
+      section.header section.content ul li.btn a.service-btn,
+      section.header section.content ul li.btn a.quote-btn {
+        margin: 0 auto;
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1px solid white;
+        background: transparent;
+        color: white;
         text-decoration: none; }
-    section.header section.content ul li.btn a.service-btn {
-      margin-right: 20px; }
-    section.header section.content ul li.btn a.quote-btn {
-      margin-left: 20px; }
+        section.header section.content ul li.btn a.service-btn:hover,
+        section.header section.content ul li.btn a.quote-btn:hover {
+          background-color: white;
+          color: black;
+          transition: 0.3s;
+          text-decoration: none; }
+      section.header section.content ul li.btn a.service-btn {
+        margin-right: 20px; }
+      section.header section.content ul li.btn a.quote-btn {
+        margin-left: 20px; }
+      section.header section.content ul li.slogan {
+        text-align: center;
+        color: white;
+        font-size: 23px;
+        line-height: 28px;
+        text-transform: capitalize;
+        width: 99%;
+        margin-top: 110px; }
   @media (min-width: 992px) {
     section.header section.navigation nav div ul li {
       padding: 0 10px;
@@ -191,12 +202,14 @@ section.header {
         section.header section.navigation nav div ul li a:hover {
           border-bottom: 1px solid white;
           text-decoration: none;
-          color: white; } }
+          color: white; }
+    section.header section.content {
+      background: none; } }
 
 /* HELPERS & OVERRIDES */
 .btn {
   width: 100%;
   text-align: center;
-  margin-top: 150px; }
+  margin-top: 180px; }
 
 /*# sourceMappingURL=app.css.map */

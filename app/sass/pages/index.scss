@@ -1,7 +1,10 @@
 section.header {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../images/bg/background.jpeg') bottom;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../images/bg/background.jpeg') right;
   background-repeat: no-repeat;
   background-size: cover;
+
+
+
   height: 70vh;
   margin: 0;
   padding: 0;
@@ -23,6 +26,8 @@ section.header {
   }
 
   section.content {
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
     ul {
       margin-top: 100px;
       li.name {
@@ -61,6 +66,15 @@ section.header {
         a.service-btn{margin-right: 20px;}
         a.quote-btn{margin-left: 20px;}
       }
+      li.slogan {
+        text-align: center;
+        color: white;
+        font-size: 23px;
+        line-height: 28px;
+        text-transform: capitalize;
+        width: 99%;
+        margin-top: 110px;
+      }
     }
   }
 
@@ -86,6 +100,10 @@ section.header {
         }
       }
     }
+  }
+
+  section.content {
+    background: none;
   }
 }
 
