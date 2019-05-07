@@ -1,8 +1,8 @@
 $(document).ready(function() {
-  var app = document.getElementById('slogan');
+  var sloganApp = document.getElementById('slogan');
 
   //Typewriter javascript
-  var typewriter = new Typewriter(app, {
+  var typewriter = new Typewriter(sloganApp, {
     loop: true
   });
 
@@ -16,4 +16,16 @@ $(document).ready(function() {
     .typeString('<b>Fast and Excellent Care for Your Computers</b>')
     .pauseFor(1500)
     .start();
+
+    //Owl Carousel
+    $('.owl-carousel').owlCarousel({
+      navigation: true,
+      nav: true,
+      dots: true,
+      center: false,
+      items: 1,
+      slideSpeed: 200,
+      paginationSpeed: 300,
+      loop: true
+    });
 });

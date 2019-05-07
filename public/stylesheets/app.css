@@ -126,6 +126,13 @@ q:after {
   content: none; }
 
 /*RESET CSS END*/
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; }
+
 section.header {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/bg/background.jpeg") right;
   background-repeat: no-repeat;
@@ -206,10 +213,57 @@ section.header {
     section.header section.content {
       background: none; } }
 
+section.recommendation h2 {
+  color: black; }
+  section.recommendation h2:after {
+    display: none; }
+section.recommendation div div {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center; }
+  section.recommendation div div:hover {
+    cursor: pointer; }
+  section.recommendation div div a, section.recommendation div div p {
+    display: inline-block;
+    font-size: 19px;
+    line-height: 24px;
+    padding: 0 15px;
+    color: #12b8ec !important;
+    text-decoration: none; }
+  section.recommendation div div p {
+    color: black !important; }
+  section.recommendation div div .line {
+    display: block;
+    height: 2px;
+    background-color: black;
+    content: '';
+    width: 300px;
+    margin: 25px auto 25px auto; }
+  section.recommendation div div .owl-next, section.recommendation div div .owl-prev {
+    font-size: 30px !important; }
+
 /* HELPERS & OVERRIDES */
 .btn {
   width: 100%;
   text-align: center;
   margin-top: 180px; }
+
+.sub-title {
+  position: relative;
+  display: block;
+  margin: 35px auto;
+  text-align: center;
+  font-size: 35px;
+  line-height: 40px;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif; }
+  .sub-title:after {
+    display: block;
+    height: 2px;
+    background-color: white;
+    content: '';
+    width: 100px;
+    margin: 30px auto 0 auto; }
 
 /*# sourceMappingURL=app.css.map */
